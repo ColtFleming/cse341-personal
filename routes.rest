@@ -2,31 +2,37 @@
 ### Get all rosters
 GET http://localhost:3000/rosters HTTP/1.1
 ### Get contact with certain ID
-GET http://localhost:3000/rosters/63325f752e2406fe7c0e841c HTTP/1.1
+GET http://localhost:3000/rosters/634b9b65079ea8e3274be4b3 HTTP/1.1
 ###Create Contact
 POST http://localhost:3000/rosters HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Mersadie",
-    "lastName": "Fleming",
-    "email": "Sadieisdabest@gmail.com",
-    "favoriteColor": "Orange",
-    "birthday": "04/02/21"
+    "firstName": "Alex",
+    "lastName": "Newhook",
+    "number": "18",
+    "position": "Center",
+    "shoots": "Left",
+    "height": "5ft, 10in",
+    "weight": "190 pds",
+    "birthday": "01/28/1991" 
 }
 ### PUT or change contact
 PUT http://localhost:3000/rosters/63325f752e2406fe7c0e841a HTTP/1.1
 content-type: application/json
 
 {
-        "firstName": "Lindsay",
-        "lastName": "Fleming",
-        "email": "lindsayflemingisthebest@gmail.com",
-        "favoriteColor": "Teal",
-        "birthday": "12/11/87"
+    "firstName": "Alex",
+    "lastName": "Newhook",
+    "number": "18",
+    "position": "Center",
+    "shoots": "Left",
+    "height": "5ft, 10in",
+    "weight": "190 pds",
+    "birthday": "01/28/2001" 
 }
 ### DELETE Contact
-DELETE http://localhost:3000/rosters/633bb885b379f7e4331a0dfc HTTP/1.1
+DELETE http://localhost:3000/rosters/634ccba29b7d106d8c1bfb26 HTTP/1.1
 
 
 // PRODUCTION Deploy
