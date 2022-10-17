@@ -22,9 +22,13 @@ const createContact = async (req, res) => {
   const contact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
-    email: req.body.email,
-    favoriteColor: req.body.favoriteColor,
+    number: req.body.number,
+    position: req.body.position,
+    shoots: req.body.shoots,
+    height: req.body.height,
+    weight: req.body.weight,
     birthday: req.body.birthday
+        
   };
   const response = await mongodb.getDb().db('cse341').collection('roster').insertOne(contact);
   if (response.acknowledged) {
@@ -40,9 +44,13 @@ const updateContact = async (req, res) => {
   const contact = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
-    email: req.body.email,
-    favoriteColor: req.body.favoriteColor,
+    number: req.body.number,
+    position: req.body.position,
+    shoots: req.body.shoots,
+    height: req.body.height,
+    weight: req.body.weight,
     birthday: req.body.birthday
+        
   };
   const response = await mongodb
     .getDb()
