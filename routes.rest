@@ -45,14 +45,14 @@ POST https://cse341personal.onrender.com/rosters HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "Any",
-    "lastName": "Any",
-    "number": "Any",
-    "position": "Any",
-    "shoots": "Any",
-    "height": "Any",
-    "weight": "Any",
-    "birthday": "Any" 
+    "firstName": "Alex",
+    "lastName": "Newhook",
+    "number": "18",
+    "position": "Center",
+    "shoots": "Left",
+    "height": "5ft, 10in",
+    "weight": "190 pds",
+    "birthday": "01/28/2001"
 }
 ###Put or change contact
 PUT https://cse341personal.onrender.com/rosters/633bae56ac0b9eb7b5bffd4f HTTP/1.1
@@ -69,5 +69,5 @@ content-type: application/json
     "birthday": "Any" 
 }
 ###Delete contact
-DELETE https://cse341personal.onrender.com/rosters/633bb9c7fca43db1500c9ed2 HTTP/1.1
+DELETE https://cse341personal.onrender.com/rosters/634ccd8ed8fed479b71fa9b2 HTTP/1.1
 
