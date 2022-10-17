@@ -1,0 +1,67 @@
+//LOCALHOST
+### Get all rosters
+GET http://localhost:3000/rosters HTTP/1.1
+### Get contact with certain ID
+GET http://localhost:3000/rosters/63325f752e2406fe7c0e841c HTTP/1.1
+###Create Contact
+POST http://localhost:3000/rosters HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Mersadie",
+    "lastName": "Fleming",
+    "email": "Sadieisdabest@gmail.com",
+    "favoriteColor": "Orange",
+    "birthday": "04/02/21"
+}
+### PUT or change contact
+PUT http://localhost:3000/rosters/63325f752e2406fe7c0e841a HTTP/1.1
+content-type: application/json
+
+{
+        "firstName": "Lindsay",
+        "lastName": "Fleming",
+        "email": "lindsayflemingisthebest@gmail.com",
+        "favoriteColor": "Teal",
+        "birthday": "12/11/87"
+}
+### DELETE Contact
+DELETE http://localhost:3000/rosters/633bb885b379f7e4331a0dfc HTTP/1.1
+
+
+// PRODUCTION Deploy
+### Get all rosters 
+GET https://cse341personal.onrender.com/rosters
+###Get contact by ID
+GET https://cse341personal.onrender.com/rosters/633bb9c7fca43db1500c9ed1
+###Create contact 
+POST https://cse341personal.onrender.com/rosters HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Any",
+    "lastName": "Any",
+    "number": "Any",
+    "position": "Any",
+    "shoots": "Any",
+    "height": "Any",
+    "weight": "Any",
+    "birthday": "Any" 
+}
+###Put or change contact
+PUT https://cse341personal.onrender.com/rosters/633bae56ac0b9eb7b5bffd4f HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Any",
+    "lastName": "Any",
+    "number": "Any",
+    "position": "Any",
+    "shoots": "Any",
+    "height": "Any",
+    "weight": "Any",
+    "birthday": "Any" 
+}
+###Delete contact
+DELETE https://cse341personal.onrender.com/rosters/633bb9c7fca43db1500c9ed2 HTTP/1.1
+

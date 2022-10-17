@@ -1,0 +1,73 @@
+{
+    "roster": {
+      "firstName": "Nathan",
+      "lastName": "MacKinnon",
+      "number": "29",
+      "position": "Center",
+      "shoots": "Right",
+      "height": "6ft, 0in",
+      "weight": "200 pds",
+      "birthday": "09/01/1995" 
+    },
+    "roster2": {
+      "firstName": "Mikko",
+      "lastName": "Rantanen",
+      "number": "96",
+      "position": "Right Wing",
+      "shoots": "Left",
+      "height": "6ft, 4in",
+      "weight": "215",
+      "birthday": "10/29/1996" 
+    },
+    "roster3": {
+      "firstName": "Andrew",
+      "lastName": "Cogliano",
+      "number": "11",
+      "position": "Center",
+      "shoots": "Left",
+      "height": "5ft, 10in",
+      "weight": "179",
+      "birthday": "06/14/1987" 
+    },
+    "roster4": {
+        "firstName": "J.T. (Jimothy Timothy)",
+        "lastName": "Compher",
+        "number": "37",
+        "position": "Left Wing",
+        "shoots": "Right",
+        "height": "6ft, 0in",
+        "weight": "190",
+        "birthday": "04/08/1995" 
+    },
+    "roster5": {
+        "firstName": "Samuel",
+        "lastName": "Girard",
+        "number": "49",
+        "position": "Defense",
+        "shoots": "Left",
+        "height": "5ft, 10in",
+        "weight": "170",
+        "birthday": "05/12/1998" 
+    },
+    "roster6": {
+        "firstName": "Cale",
+        "lastName": "Makar",
+        "number": "8",
+        "position": "Defense",
+        "shoots": "Right",
+        "height": "5ft, 11in",
+        "weight": "187",
+        "birthday": "10/30/1998" 
+      },
+      "roster7": {
+        "firstName": "Pavel",
+        "lastName": "Francouz",
+        "number": "39",
+        "position": "Goalie",
+        "shoots": "Left",
+        "height": "6ft, 0in",
+        "weight": "179",
+        "birthday": "06/03/1990" 
+      }
+    
+  }
