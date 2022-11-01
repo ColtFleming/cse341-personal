@@ -1,9 +1,17 @@
 //LOCALHOST
 ### Get all rosters
 GET http://localhost:3000/rosters HTTP/1.1
-### Get contact with certain ID
+
+### Get all Schedules
+GET http://localhost:3000/schedules HTTP/1.1
+
+### Get roster member with certain ID
 GET http://localhost:3000/rosters/634b9b65079ea8e3274be4b3 HTTP/1.1
-###Create Contact
+
+### Get schedule with certain ID
+GET http://localhost:3000/schedules/636089951d65da8da668f9d4 HTTP/1.1
+
+###Create Roster Member
 POST http://localhost:3000/rosters HTTP/1.1
 content-type: application/json
 
@@ -17,7 +25,18 @@ content-type: application/json
     "weight": "190 pds",
     "birthday": "01/28/1991" 
 }
-### PUT or change contact
+
+###Create Schedule
+POST http://localhost:3000/schedules HTTP/1.1
+content-type: application/json
+
+{
+    "date": "ANY",
+    "opponent": "ANY",
+    "location": "ANY",
+}
+
+### PUT or change roster member
 PUT http://localhost:3000/rosters/63325f752e2406fe7c0e841a HTTP/1.1
 content-type: application/json
 
@@ -31,16 +50,39 @@ content-type: application/json
     "weight": "190 pds",
     "birthday": "01/28/2001" 
 }
-### DELETE Contact
+
+### PUT or change schedule
+PUT http://localhost:3000/schedules/63325f752e2406fe7c0e841a HTTP/1.1
+content-type: application/json
+
+{
+    "date": "ANY",
+    "opponent": "ANY",
+    "location": "ANY",
+}
+
+### DELETE Roster member
 DELETE http://localhost:3000/rosters/634ccba29b7d106d8c1bfb26 HTTP/1.1
+
+### DELETE Schedule
+DELETE http://localhost:3000/schedules/634ccba29b7d106d8c1bfb26 HTTP/1.1
+
 
 
 // PRODUCTION Deploy
 ### Get all rosters 
 GET https://cse341personal.onrender.com/rosters
-###Get contact by ID
+
+### Get all schedules
+GET https://cse341personal.onrender.com/schedules
+
+###Get roster member by ID
 GET https://cse341personal.onrender.com/rosters/633bb9c7fca43db1500c9ed1
-###Create contact 
+
+###Get schedule by ID
+GET https://cse341personal.onrender.com/schedules/633bb9c7fca43db1500c9ed1
+
+###Create roster member
 POST https://cse341personal.onrender.com/rosters HTTP/1.1
 content-type: application/json
 
@@ -54,7 +96,18 @@ content-type: application/json
     "weight": "190 pds",
     "birthday": "01/28/2001"
 }
-###Put or change contact
+
+###Create schedule
+POST https://cse341personal.onrender.com/schedules HTTP/1.1
+content-type: application/json
+
+{
+    "date": "ANY",
+    "opponent": "ANY",
+    "location": "ANY",
+}
+
+###Put or change roster member
 PUT https://cse341personal.onrender.com/rosters/633bae56ac0b9eb7b5bffd4f HTTP/1.1
 content-type: application/json
 
@@ -68,6 +121,20 @@ content-type: application/json
     "weight": "Any",
     "birthday": "Any" 
 }
-###Delete contact
+
+###Put or change schedule
+PUT https://cse341personal.onrender.com/schedules/633bae56ac0b9eb7b5bffd4f HTTP/1.1
+content-type: application/json
+
+{
+    "date": "ANY",
+    "opponent": "ANY",
+    "location": "ANY",
+}
+
+###Delete roster member
 DELETE https://cse341personal.onrender.com/rosters/634ccd8ed8fed479b71fa9b2 HTTP/1.1
+
+###Delete schedule
+DELETE https://cse341personal.onrender.com/schedules/634ccd8ed8fed479b71fa9b2 HTTP/1.1
 
