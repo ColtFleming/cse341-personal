@@ -36,6 +36,9 @@ const getSingle = async (req, res) => {
 };
 
 const createContact = async (req, res) => {
+  if (!req.user) {
+    return res.status(401).send('Not Authenticated');
+  }
   const rosterMember = {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
