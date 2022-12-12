@@ -35,6 +35,44 @@ const getSingle = async (req, res) => {
     });
 };
 
+const getName = async (req, res) => {
+  if (!ObjectId.isValid(req.params.firstName)) {
+    res.status(400).json('No one by that name is on the roster');
+  }
+  const userFirstName = new ObjectId(req.params.firstName);
+  mongodb
+    .getDb()
+    .db('cse341')
+    .collection('roster')
+    .find({ firstName: userFirstName })
+    .toArray((err, result) => {
+      if (err) {
+        res.status(400).json({ message: err });
+      }
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(result[0]);
+    });
+};
+
+const getNumber = async (req, res) => {
+  if (!ObjectId.isValid(req.params.number)) {
+    res.status(400).json('That number is not on the roster');
+  }
+  const userNumber = new ObjectId(req.params.number);
+  mongodb
+    .getDb()
+    .db('cse341')
+    .collection('roster')
+    .find({ number: userNumber })
+    .toArray((err, result) => {
+      if (err) {
+        res.status(400).json({ message: err });
+      }
+      res.setHeader('Content-Type', 'application/json');
+      res.status(200).json(result[0]);
+    });
+};
+
 const createContact = async (req, res) => {
   if (!req.user) {
     return res.status(401).send('Not Authenticated');
@@ -113,6 +151,8 @@ const deleteContact = async (req, res) => {
 module.exports = {
   getAll,
   getSingle,
+  getName,
+  getNumber,
   createContact,
   updateContact,
   deleteContact
